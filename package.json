@@ -1,0 +1,30 @@
+{
+  "name": "twitch-scripts",
+  "version": "1.0.0",
+  "description": "A collection of scripts to interact with the Twitch API.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-app-access-token": "tsx ./src/get-app-access-token.ts",
+    "get-drops-entitlements": "tsx ./src/get-drops-entitlements",
+    "get-user": "tsx ./src/get-user.ts",
+    "minting-api": "tsx ./src/minting-api",
+    "update-twitch-entitlement": "tsx ./src/update-twitch-entitlement",
+    "webhook-server": "tsx ./src/webhook-server"
+  },
+  "author": "ZacharyCouchman",
+  "license": "ISC",
+  "dependencies": {
+    "@imtbl/sdk": "^2.1.11",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
